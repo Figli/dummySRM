@@ -47,11 +47,6 @@ public class LoginController {
 		return "login";
 	}
 
-	@RequestMapping(value = "/registration", method = RequestMethod.GET)
-	public String registrationPage(Model model) {
-		model.addAttribute("user", new User());
-		return "registration";
-	}
 
 	@RequestMapping(value="/logout", method = RequestMethod.GET)
 	public String logoutPage (HttpServletRequest request, HttpServletResponse response) {
